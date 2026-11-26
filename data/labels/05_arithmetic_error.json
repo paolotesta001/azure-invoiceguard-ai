@@ -1,0 +1,20 @@
+{
+  "file": "05_arithmetic_error.xml",
+  "description": "Declared total is 10.00 higher than subtotal + VAT",
+  "format": "xml",
+  "supplier_id": "S-IT-02",
+  "invoice_number": "CF-26-0450",
+  "expected_fields": {
+    "invoice_date": "2026-10-08",
+    "currency": "EUR",
+    "subtotal": "92.00",
+    "vat_amount": "20.24",
+    "total": "122.24"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "flagged",
+  "expected_anomalies": [
+    "ARITHMETIC"
+  ],
+  "expected_needs_review": []
+}

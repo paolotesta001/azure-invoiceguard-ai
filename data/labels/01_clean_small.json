@@ -1,0 +1,18 @@
+{
+  "file": "01_clean_small.xml",
+  "description": "Clean invoice below the auto-approve threshold",
+  "format": "xml",
+  "supplier_id": "S-IT-01",
+  "invoice_number": "FA-2026-0101",
+  "expected_fields": {
+    "invoice_date": "2026-10-05",
+    "currency": "EUR",
+    "subtotal": "202.50",
+    "vat_amount": "44.55",
+    "total": "247.05"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "auto_approved",
+  "expected_anomalies": [],
+  "expected_needs_review": []
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "S-IT-01",
+    "name": "Fabrikam Arredi S.r.l.",
+    "vat_id": "IT01000000011",
+    "country": "IT",
+    "currency": "EUR",
+    "iban_on_file": "IT86U1043321819600133890838",
+    "iban_last_changed_at": "2025-03-01",
+    "status": "active"
+  },
+  {
+    "id": "S-IT-02",
+    "name": "Contoso Forniture Ufficio S.p.A.",
+    "vat_id": "IT02000000022",
+    "country": "IT",
+    "currency": "EUR",
+    "iban_on_file": "IT84N3794026542351161559407",
+    "iban_last_changed_at": null,
+    "status": "active"
+  },
+  {
+    "id": "S-IT-03",
+    "name": "Northwind Logistica S.r.l.",
+    "vat_id": "IT03000000033",
+    "country": "IT",
+    "currency": "EUR",
+    "iban_on_file": "IT81R1618495931034131647525",
+    "iban_last_changed_at": "2024-06-15",
+    "status": "active"
+  },
+  {
+    "id": "S-IT-04",
+    "name": "Tailspin Elettronica S.r.l.",
+    "vat_id": "IT04000000044",
+    "country": "IT",
+    "currency": "EUR",
+    "iban_on_file": "IT76L3419283276483503056413",
+    "iban_last_changed_at": "2026-09-28",
+    "status": "active"
+  },
+  {
+    "id": "S-IT-05",
+    "name": "Adatum Servizi S.r.l.",
+    "vat_id": "IT05000000055",
+    "country": "IT",
+    "currency": "EUR",
+    "iban_on_file": "IT31S5376724238849696532871",
+    "iban_last_changed_at": null,
+    "status": "active"
+  },
+  {
+    "id": "S-PL-01",
+    "name": "Wingtip Dostawy Sp. z o.o.",
+    "vat_id": "PL1000000011",
+    "country": "PL",
+    "currency": "PLN",
+    "iban_on_file": "PL84012269166978480184514627",
+    "iban_last_changed_at": null,
+    "status": "active"
+  },
+  {
+    "id": "S-PL-02",
+    "name": "Litware Polska Sp. z o.o.",
+    "vat_id": "PL2000000022",
+    "country": "PL",
+    "currency": "PLN",
+    "iban_on_file": "PL62048281489325288095701543",
+    "iban_last_changed_at": null,
+    "status": "active"
+  }
+]

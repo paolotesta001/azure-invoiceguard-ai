@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<p:FatturaElettronica xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" versione="FPR12">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>02000000022</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>00001</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>0000000</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>02000000022</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>Contoso Forniture Ufficio S.p.A.</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Via Esempio 1</Indirizzo>
+        <CAP>20100</CAP>
+        <Comune>Milano</Comune>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>09999999990</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>Demo Buyer S.r.l. (synthetic)</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Via Esempio 1</Indirizzo>
+        <CAP>20100</CAP>
+        <Comune>Milano</Comune>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-10-08</Data>
+        <Numero>CF-26-0450</Numero>
+        <ImportoTotaleDocumento>122.24</ImportoTotaleDocumento>
+      </DatiGeneraliDocumento>
+      <DatiOrdineAcquisto>
+        <IdDocumento>PO-S-IT-02-001</IdDocumento>
+      </DatiOrdineAcquisto>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>SKU</CodiceTipo>
+          <CodiceValore>CON-BINDER</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>Ring binder pack (10)</Descrizione>
+        <Quantita>5.00</Quantita>
+        <UnitaMisura>pack</UnitaMisura>
+        <PrezzoUnitario>18.40</PrezzoUnitario>
+        <PrezzoTotale>92.00</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <ImponibileImporto>92.00</ImponibileImporto>
+        <Imposta>20.24</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP05</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-12-07</DataScadenzaPagamento>
+        <ImportoPagamento>122.24</ImportoPagamento>
+        <IBAN>IT84N3794026542351161559407</IBAN>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>

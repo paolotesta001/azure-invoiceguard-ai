@@ -1,0 +1,20 @@
+{
+  "file": "08_price_within_cap.xml",
+  "description": "Paper price +1.83%, within the 3% cap: human confirms the adjustment",
+  "format": "xml",
+  "supplier_id": "S-IT-02",
+  "invoice_number": "CF-26-0461",
+  "expected_fields": {
+    "invoice_date": "2026-10-12",
+    "currency": "EUR",
+    "subtotal": "223.00",
+    "vat_amount": "49.06",
+    "total": "272.06"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "flagged",
+  "expected_anomalies": [
+    "PRICE_INCREASE_WITHIN_CAP"
+  ],
+  "expected_needs_review": []
+}

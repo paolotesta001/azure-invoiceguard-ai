@@ -1,0 +1,18 @@
+{
+  "file": "09_clean_above_threshold.xml",
+  "description": "Clean, but total is above the auto-approve threshold",
+  "format": "xml",
+  "supplier_id": "S-IT-03",
+  "invoice_number": "NWL-2026-320",
+  "expected_fields": {
+    "invoice_date": "2026-10-13",
+    "currency": "EUR",
+    "subtotal": "1160.00",
+    "vat_amount": "255.20",
+    "total": "1415.20"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "pending_review",
+  "expected_anomalies": [],
+  "expected_needs_review": []
+}

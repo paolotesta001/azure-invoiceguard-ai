@@ -1,0 +1,22 @@
+{
+  "file": "16_scan_low_quality.jpg",
+  "description": "Noisy scan: total and IBAN read with low confidence → human review",
+  "format": "scan",
+  "supplier_id": "S-IT-02",
+  "invoice_number": "CF-26-0475",
+  "expected_fields": {
+    "invoice_date": "2026-10-19",
+    "currency": "EUR",
+    "subtotal": "128.00",
+    "vat_amount": "28.16",
+    "total": "156.16"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "pending_review",
+  "expected_anomalies": [],
+  "expected_needs_review": [
+    "currency",
+    "iban",
+    "total"
+  ]
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "id": "GR-S-IT-01-001",
+    "po_number": "PO-S-IT-01-001",
+    "received_at": "2026-09-30",
+    "lines": [
+      {
+        "sku": "FAB-CHAIR",
+        "quantity_received": "300"
+      },
+      {
+        "sku": "FAB-DESK",
+        "quantity_received": "300"
+      },
+      {
+        "sku": "FAB-LAMP",
+        "quantity_received": "300"
+      }
+    ]
+  },
+  {
+    "id": "GR-S-IT-02-001",
+    "po_number": "PO-S-IT-02-001",
+    "received_at": "2026-09-30",
+    "lines": [
+      {
+        "sku": "CON-PAPER",
+        "quantity_received": "300"
+      },
+      {
+        "sku": "CON-TONER",
+        "quantity_received": "300"
+      },
+      {
+        "sku": "CON-BINDER",
+        "quantity_received": "300"
+      }
+    ]
+  },
+  {
+    "id": "GR-S-IT-03-001",
+    "po_number": "PO-S-IT-03-001",
+    "received_at": "2026-09-30",
+    "lines": [
+      {
+        "sku": "NW-PALLET",
+        "quantity_received": "300"
+      },
+      {
+        "sku": "NW-STORAGE",
+        "quantity_received": "300"
+      }
+    ]
+  },
+  {
+    "id": "GR-S-IT-04-001",
+    "po_number": "PO-S-IT-04-001",
+    "received_at": "2026-09-30",
+    "lines": [
+      {
+        "sku": "TS-CABLE",
+        "quantity_received": "300"
+      },
+      {
+        "sku": "TS-DOCK",
+        "quantity_received": "300"
+      }
+    ]
+  },
+  {
+    "id": "GR-S-IT-05-001",
+    "po_number": "PO-S-IT-05-001",
+    "received_at": "2026-09-30",
+    "lines": [
+      {
+        "sku": "AD-CLEAN",
+        "quantity_received": "300"
+      }
+    ]
+  },
+  {
+    "id": "GR-S-PL-01-001",
+    "po_number": "PO-S-PL-01-001",
+    "received_at": "2026-09-30",
+    "lines": [
+      {
+        "sku": "WT-BOX",
+        "quantity_received": "300"
+      }
+    ]
+  },
+  {
+    "id": "GR-S-PL-02-001",
+    "po_number": "PO-S-PL-02-001",
+    "received_at": "2026-09-30",
+    "lines": [
+      {
+        "sku": "LW-LIC",
+        "quantity_received": "300"
+      }
+    ]
+  }
+]

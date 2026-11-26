@@ -1,0 +1,18 @@
+{
+  "file": "15_pdf_clean_layout_c.pdf",
+  "description": "PDF (layout C), clean; PO number only via query field",
+  "format": "pdf_c",
+  "supplier_id": "S-IT-03",
+  "invoice_number": "NWL-2026-330",
+  "expected_fields": {
+    "invoice_date": "2026-10-18",
+    "currency": "EUR",
+    "subtotal": "360.00",
+    "vat_amount": "79.20",
+    "total": "439.20"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "auto_approved",
+  "expected_anomalies": [],
+  "expected_needs_review": []
+}

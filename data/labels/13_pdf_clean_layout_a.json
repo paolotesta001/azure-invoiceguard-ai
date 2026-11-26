@@ -1,0 +1,18 @@
+{
+  "file": "13_pdf_clean_layout_a.pdf",
+  "description": "PDF (layout A), clean, high OCR confidence",
+  "format": "pdf_a",
+  "supplier_id": "S-IT-02",
+  "invoice_number": "CF-26-0470",
+  "expected_fields": {
+    "invoice_date": "2026-10-16",
+    "currency": "EUR",
+    "subtotal": "146.30",
+    "vat_amount": "32.19",
+    "total": "178.49"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "auto_approved",
+  "expected_anomalies": [],
+  "expected_needs_review": []
+}

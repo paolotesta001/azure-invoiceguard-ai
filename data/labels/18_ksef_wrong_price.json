@@ -1,0 +1,20 @@
+{
+  "file": "18_ksef_wrong_price.xml",
+  "description": "KSeF FA(3), licence price +7.5% vs contract",
+  "format": "ksef",
+  "supplier_id": "S-PL-02",
+  "invoice_number": "LW-2026-311",
+  "expected_fields": {
+    "invoice_date": "2026-10-21",
+    "currency": "PLN",
+    "subtotal": "1290.00",
+    "vat_amount": "296.70",
+    "total": "1586.70"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "flagged",
+  "expected_anomalies": [
+    "PRICE_ABOVE_CAP"
+  ],
+  "expected_needs_review": []
+}

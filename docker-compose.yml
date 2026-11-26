@@ -1,0 +1,40 @@
+# Mock mode: no Azure subscription needed. `make demo` → http://localhost:8501
+# Azurite is added in v3 together with the Blob-triggered orchestration.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: invoiceguard
+      POSTGRES_PASSWORD: invoiceguard   # local demo database only
+      POSTGRES_DB: invoiceguard
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U invoiceguard"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  erp:
+    build: .
+    command: uvicorn mock_erp.app:app --host 0.0.0.0 --port 8001
+    environment:
+      INVOICEGUARD_SEED_DIR: data/seed
+    # Not published on the host: only the backend can reach the payment endpoint.
+    expose: ["8001"]
+
+  app:
+    build: .
+    depends_on:
+      db: {condition: service_healthy}
+      erp: {condition: service_started}
+    environment:
+      INVOICEGUARD_MODE: mock
+      INVOICEGUARD_STORAGE: sql
+      INVOICEGUARD_DATABASE_URL: postgresql+psycopg://invoiceguard:invoiceguard@db:5432/invoiceguard
+      INVOICEGUARD_ERP_BASE_URL: http://erp:8001
+      INVOICEGUARD_FILE_STORE_DIR: /app/.data/files
+      INVOICEGUARD_RECORDINGS_DIR: data/recorded
+    command: >
+      sh -c "alembic upgrade head &&
+             python scripts/seed.py --process-demo &&
+             streamlit run ui/app.py --server.port 8501 --server.address 0.0.0.0"
+    ports: ["8501:8501"]

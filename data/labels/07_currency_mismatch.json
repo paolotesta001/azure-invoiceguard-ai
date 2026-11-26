@@ -1,0 +1,20 @@
+{
+  "file": "07_currency_mismatch.xml",
+  "description": "Invoice in USD, contract in EUR",
+  "format": "xml",
+  "supplier_id": "S-IT-01",
+  "invoice_number": "FA-2026-0107",
+  "expected_fields": {
+    "invoice_date": "2026-10-10",
+    "currency": "USD",
+    "subtotal": "140.00",
+    "vat_amount": "30.80",
+    "total": "170.80"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "flagged",
+  "expected_anomalies": [
+    "CURRENCY"
+  ],
+  "expected_needs_review": []
+}

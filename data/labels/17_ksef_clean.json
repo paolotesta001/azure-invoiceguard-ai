@@ -1,0 +1,18 @@
+{
+  "file": "17_ksef_clean.xml",
+  "description": "KSeF FA(3), clean, below the PLN threshold",
+  "format": "ksef",
+  "supplier_id": "S-PL-01",
+  "invoice_number": "WT/2026/10/015",
+  "expected_fields": {
+    "invoice_date": "2026-10-20",
+    "currency": "PLN",
+    "subtotal": "1300.00",
+    "vat_amount": "299.00",
+    "total": "1599.00"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "auto_approved",
+  "expected_anomalies": [],
+  "expected_needs_review": []
+}

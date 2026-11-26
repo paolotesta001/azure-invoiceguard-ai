@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<p:FatturaElettronica xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" versione="FPR12">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>02000000022</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>00001</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>0000000</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>02000000022</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>Contoso Forniture Ufficio S.p.A.</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Via Esempio 1</Indirizzo>
+        <CAP>20100</CAP>
+        <Comune>Milano</Comune>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>09999999990</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>Demo Buyer S.r.l. (synthetic)</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Via Esempio 1</Indirizzo>
+        <CAP>20100</CAP>
+        <Comune>Milano</Comune>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-10-06</Data>
+        <Numero>CF-26-0442</Numero>
+        <ImportoTotaleDocumento>315.86</ImportoTotaleDocumento>
+      </DatiGeneraliDocumento>
+      <DatiOrdineAcquisto>
+        <IdDocumento>PO-S-IT-02-001</IdDocumento>
+      </DatiOrdineAcquisto>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>SKU</CodiceTipo>
+          <CodiceValore>CON-TONER</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>Toner cartridge black</Descrizione>
+        <Quantita>3.00</Quantita>
+        <UnitaMisura>pz</UnitaMisura>
+        <PrezzoUnitario>71.70</PrezzoUnitario>
+        <PrezzoTotale>215.10</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>SKU</CodiceTipo>
+          <CodiceValore>CON-PAPER</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>A4 paper box (5 reams)</Descrizione>
+        <Quantita>2.00</Quantita>
+        <UnitaMisura>box</UnitaMisura>
+        <PrezzoUnitario>21.90</PrezzoUnitario>
+        <PrezzoTotale>43.80</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <ImponibileImporto>258.90</ImponibileImporto>
+        <Imposta>56.96</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP05</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-12-05</DataScadenzaPagamento>
+        <ImportoPagamento>315.86</ImportoPagamento>
+        <IBAN>IT84N3794026542351161559407</IBAN>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>

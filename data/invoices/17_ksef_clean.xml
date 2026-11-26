@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Faktura xmlns="http://crd.gov.pl/wzor/2025/06/25/13775/">
+  <Naglowek>
+    <KodFormularza kodSystemowy="FA (3)" wersjaSchemy="1-0E">FA</KodFormularza>
+    <WariantFormularza>3</WariantFormularza>
+    <DataWytworzeniaFa>2026-10-20T09:00:00Z</DataWytworzeniaFa>
+    <SystemInfo>InvoiceGuard synthetic generator</SystemInfo>
+  </Naglowek>
+  <Podmiot1>
+    <PrefiksPodatnika>PL</PrefiksPodatnika>
+    <DaneIdentyfikacyjne>
+      <NIP>1000000011</NIP>
+      <Nazwa>Wingtip Dostawy Sp. z o.o.</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>ul. Przykładowa 1, 00-001 Warszawa</AdresL1>
+    </Adres>
+  </Podmiot1>
+  <Podmiot2>
+    <DaneIdentyfikacyjne>
+      <NIP>9999999999</NIP>
+      <Nazwa>Demo Buyer Polska Sp. z o.o. (synthetic)</Nazwa>
+    </DaneIdentyfikacyjne>
+    <Adres>
+      <KodKraju>PL</KodKraju>
+      <AdresL1>ul. Przykładowa 1, 00-001 Warszawa</AdresL1>
+    </Adres>
+  </Podmiot2>
+  <Fa>
+    <KodWaluty>PLN</KodWaluty>
+    <P_1>2026-10-20</P_1>
+    <P_1M>Warszawa</P_1M>
+    <P_2>WT/2026/10/015</P_2>
+    <P_13_1>1300.00</P_13_1>
+    <P_14_1>299.00</P_14_1>
+    <P_15>1599.00</P_15>
+    <RodzajFaktury>VAT</RodzajFaktury>
+    <FaWiersz>
+      <NrWierszaFa>1</NrWierszaFa>
+      <Indeks>WT-BOX</Indeks>
+      <P_7>Shipping box large</P_7>
+      <P_8A>szt</P_8A>
+      <P_8B>200.00</P_8B>
+      <P_9A>6.50</P_9A>
+      <P_11>1300.00</P_11>
+      <P_12>23</P_12>
+    </FaWiersz>
+    <Platnosc>
+      <TerminPlatnosci>
+        <Termin>2026-11-19</Termin>
+      </TerminPlatnosci>
+      <FormaPlatnosci>6</FormaPlatnosci>
+      <RachunekBankowy>
+        <NrRB>84012269166978480184514627</NrRB>
+      </RachunekBankowy>
+    </Platnosc>
+    <WarunkiTransakcji>
+      <Zamowienia>
+        <DataZamowienia>2026-09-15</DataZamowienia>
+        <NrZamowienia>PO-S-PL-01-001</NrZamowienia>
+      </Zamowienia>
+    </WarunkiTransakcji>
+  </Fa>
+</Faktura>

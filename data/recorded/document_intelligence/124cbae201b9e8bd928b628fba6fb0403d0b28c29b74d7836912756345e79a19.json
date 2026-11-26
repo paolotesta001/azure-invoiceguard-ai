@@ -1,0 +1,150 @@
+{
+  "_recording": {
+    "source": "simulated",
+    "note": "Generated from synthetic ground truth; replace with a live recording via `make record` (scripts/record_responses.py)."
+  },
+  "apiVersion": "2024-11-30",
+  "modelId": "prebuilt-invoice",
+  "documents": [
+    {
+      "docType": "invoice",
+      "confidence": 0.975,
+      "fields": {
+        "VendorName": {
+          "type": "string",
+          "valueString": "Fabrikam Arredi S.r.l.",
+          "content": "Fabrikam Arredi S.r.l.",
+          "confidence": 0.966
+        },
+        "VendorTaxId": {
+          "type": "string",
+          "valueString": "IT01000000011",
+          "content": "IT01000000011",
+          "confidence": 0.961
+        },
+        "CustomerName": {
+          "type": "string",
+          "valueString": "Demo Buyer S.r.l. (synthetic)",
+          "content": "Demo Buyer S.r.l. (synthetic)",
+          "confidence": 0.989
+        },
+        "InvoiceId": {
+          "type": "string",
+          "valueString": "FA-2026-0120",
+          "content": "FA-2026-0120",
+          "confidence": 0.909
+        },
+        "InvoiceDate": {
+          "type": "date",
+          "valueDate": "2026-10-17",
+          "content": "2026-10-17",
+          "confidence": 0.936
+        },
+        "DueDate": {
+          "type": "date",
+          "valueDate": "2026-11-16",
+          "content": "2026-11-16",
+          "confidence": 0.931
+        },
+        "SubTotal": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 520.0,
+            "currencyCode": "EUR"
+          },
+          "content": "520.00",
+          "confidence": 0.978
+        },
+        "TotalTax": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 114.4,
+            "currencyCode": "EUR"
+          },
+          "content": "114.40",
+          "confidence": 0.922
+        },
+        "InvoiceTotal": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 634.4,
+            "currencyCode": "EUR"
+          },
+          "content": "634.40",
+          "confidence": 0.917
+        },
+        "Items": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "object",
+              "confidence": 0.94,
+              "valueObject": {
+                "ProductCode": {
+                  "type": "string",
+                  "valueString": "FAB-DESK",
+                  "content": "FAB-DESK",
+                  "confidence": 0.938
+                },
+                "Description": {
+                  "type": "string",
+                  "valueString": "Standing desk 160x80",
+                  "content": "Standing desk 160x80",
+                  "confidence": 0.925
+                },
+                "Quantity": {
+                  "type": "number",
+                  "valueNumber": 2.0,
+                  "content": "2.00",
+                  "confidence": 0.922
+                },
+                "UnitPrice": {
+                  "type": "currency",
+                  "valueCurrency": {
+                    "amount": 260.0,
+                    "currencyCode": "EUR"
+                  },
+                  "content": "260.00",
+                  "confidence": 0.983
+                },
+                "Amount": {
+                  "type": "currency",
+                  "valueCurrency": {
+                    "amount": 520.0,
+                    "currencyCode": "EUR"
+                  },
+                  "content": "520.00",
+                  "confidence": 0.94
+                },
+                "TaxRate": {
+                  "type": "string",
+                  "valueString": "22%",
+                  "content": "22%",
+                  "confidence": 0.978
+                }
+              }
+            }
+          ]
+        },
+        "PurchaseOrder": {
+          "type": "string",
+          "valueString": "PO-S-IT-01-001",
+          "content": "PO-S-IT-01-001",
+          "confidence": 0.95
+        },
+        "PurchaseOrderNumber": {
+          "type": "string",
+          "valueString": "PO-S-IT-01-001",
+          "content": "PO-S-IT-01-001",
+          "confidence": 0.905
+        },
+        "IBAN": {
+          "type": "string",
+          "valueString": "IT86U1043321819600133890838",
+          "content": "IT86U1043321819600133890838",
+          "confidence": 0.99
+        }
+      }
+    }
+  ]
+}

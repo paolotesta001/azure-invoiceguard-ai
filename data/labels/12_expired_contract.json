@@ -1,0 +1,20 @@
+{
+  "file": "12_expired_contract.xml",
+  "description": "The only contract with this supplier expired on 2025-12-31",
+  "format": "xml",
+  "supplier_id": "S-IT-05",
+  "invoice_number": "AD-2026-10",
+  "expected_fields": {
+    "invoice_date": "2026-10-15",
+    "currency": "EUR",
+    "subtotal": "450.00",
+    "vat_amount": "99.00",
+    "total": "549.00"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "flagged",
+  "expected_anomalies": [
+    "NO_VALID_CONTRACT"
+  ],
+  "expected_needs_review": []
+}

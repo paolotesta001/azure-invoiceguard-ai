@@ -1,0 +1,19 @@
+# Business rules for validation. All values are non-secret and versioned with the code.
+arithmetic_tolerance: "0.01"
+confidence_threshold: 0.80
+iban_recent_change_days: 30
+approval_timeout_hours: 72
+# Auto-approve only below these totals (per currency, no conversion).
+auto_approve_threshold:
+  EUR: "1000.00"
+  PLN: "4300.00"
+# Valid VAT rates per supplier country (percent).
+vat_rates:
+  IT: ["22", "10", "5", "4"]
+  PL: ["23", "8", "5", "0"]
+# LLM cost estimate per 1,000 tokens. Fill from the Azure pricing page for your model,
+# deployment type and region. Zero means "not configured" (cost shown as 0).
+llm_pricing:
+  currency: "EUR"
+  input_per_1k_tokens: "0"
+  output_per_1k_tokens: "0"

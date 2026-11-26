@@ -1,0 +1,84 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invoiceguard-ai"
+version = "0.2.0"
+description = "Production-oriented, human-in-the-loop invoice validation on Microsoft Azure (portfolio project)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+# Versions are pinned. Bump deliberately and record the change in docs/sdk-notes.md.
+dependencies = [
+  "pydantic==2.12.5",
+  "pydantic-settings==2.10.1",
+  "PyYAML==6.0.3",
+  "lxml==6.1.2",
+  "httpx==0.28.1",
+  "fastapi==0.136.3",
+  "uvicorn==0.35.0",
+  "streamlit==1.66.1",
+  "pandas==2.2.2",
+  "numpy==2.0.2",
+  "SQLAlchemy==2.0.36",
+  "alembic==1.14.0",
+  "psycopg[binary]==3.2.3",
+]
+
+[project.optional-dependencies]
+# Azure SDKs: only needed for INVOICEGUARD_MODE=azure and `make record`. Mock mode never imports them.
+azure = [
+  "azure-identity==1.25.0",
+  "azure-ai-documentintelligence==1.0.2",
+  "openai==1.109.1",
+]
+# Synthetic PDF / scan generation (scripts/generate_synthetic_data.py)
+data = [
+  "reportlab==4.4.6",
+  "Pillow==12.3.0",
+]
+dev = [
+  "invoiceguard-ai[data]",
+  "pytest==9.1.1",
+  "ruff==0.8.0",
+  "mypy==1.13.0",
+  "types-PyYAML==6.0.12.20240917",
+  "lxml-stubs==0.5.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["postgres: requires INVOICEGUARD_TEST_DATABASE_URL pointing to PostgreSQL"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["migrations/versions"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "S", "SIM", "RUF", "DTZ", "PT"]
+ignore = [
+  "S101",  # asserts are fine in tests
+  "E501",  # line length is handled by `ruff format`
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "S105", "S106"]
+"scripts/**" = ["S311"]  # random is used only for reproducible synthetic data
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+plugins = ["pydantic.mypy"]
+mypy_path = ["src", "."]
+packages = ["invoiceguard", "mock_erp"]
+
+[[tool.mypy.overrides]]
+module = ["streamlit.*", "pandas.*", "openai.*", "azure.*", "reportlab.*", "PIL.*"]
+ignore_missing_imports = true

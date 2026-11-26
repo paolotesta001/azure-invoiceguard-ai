@@ -1,0 +1,214 @@
+{
+  "_recording": {
+    "source": "simulated",
+    "note": "Generated from synthetic ground truth; replace with a live recording via `make record` (scripts/record_responses.py)."
+  },
+  "apiVersion": "2024-11-30",
+  "modelId": "prebuilt-invoice",
+  "documents": [
+    {
+      "docType": "invoice",
+      "confidence": 0.942,
+      "fields": {
+        "VendorName": {
+          "type": "string",
+          "valueString": "Contoso Forniture Ufficio S.p.A.",
+          "content": "Contoso Forniture Ufficio S.p.A.",
+          "confidence": 0.939
+        },
+        "VendorTaxId": {
+          "type": "string",
+          "valueString": "IT02000000022",
+          "content": "IT02000000022",
+          "confidence": 0.947
+        },
+        "CustomerName": {
+          "type": "string",
+          "valueString": "Demo Buyer S.r.l. (synthetic)",
+          "content": "Demo Buyer S.r.l. (synthetic)",
+          "confidence": 0.911
+        },
+        "InvoiceId": {
+          "type": "string",
+          "valueString": "CF-26-0470",
+          "content": "CF-26-0470",
+          "confidence": 0.92
+        },
+        "InvoiceDate": {
+          "type": "date",
+          "valueDate": "2026-10-16",
+          "content": "2026-10-16",
+          "confidence": 0.93
+        },
+        "DueDate": {
+          "type": "date",
+          "valueDate": "2026-12-15",
+          "content": "2026-12-15",
+          "confidence": 0.953
+        },
+        "SubTotal": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 146.3,
+            "currencyCode": "EUR"
+          },
+          "content": "146.30",
+          "confidence": 0.921
+        },
+        "TotalTax": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 32.19,
+            "currencyCode": "EUR"
+          },
+          "content": "32.19",
+          "confidence": 0.92
+        },
+        "InvoiceTotal": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 178.49,
+            "currencyCode": "EUR"
+          },
+          "content": "178.49",
+          "confidence": 0.906
+        },
+        "Items": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "object",
+              "confidence": 0.957,
+              "valueObject": {
+                "ProductCode": {
+                  "type": "string",
+                  "valueString": "CON-PAPER",
+                  "content": "CON-PAPER",
+                  "confidence": 0.921
+                },
+                "Description": {
+                  "type": "string",
+                  "valueString": "A4 paper box (5 reams)",
+                  "content": "A4 paper box (5 reams)",
+                  "confidence": 0.981
+                },
+                "Quantity": {
+                  "type": "number",
+                  "valueNumber": 5.0,
+                  "content": "5.00",
+                  "confidence": 0.977
+                },
+                "UnitPrice": {
+                  "type": "currency",
+                  "valueCurrency": {
+                    "amount": 21.9,
+                    "currencyCode": "EUR"
+                  },
+                  "content": "21.90",
+                  "confidence": 0.906
+                },
+                "Amount": {
+                  "type": "currency",
+                  "valueCurrency": {
+                    "amount": 109.5,
+                    "currencyCode": "EUR"
+                  },
+                  "content": "109.50",
+                  "confidence": 0.921
+                },
+                "TaxRate": {
+                  "type": "string",
+                  "valueString": "22%",
+                  "content": "22%",
+                  "confidence": 0.96
+                }
+              }
+            },
+            {
+              "type": "object",
+              "confidence": 0.919,
+              "valueObject": {
+                "ProductCode": {
+                  "type": "string",
+                  "valueString": "CON-BINDER",
+                  "content": "CON-BINDER",
+                  "confidence": 0.912
+                },
+                "Description": {
+                  "type": "string",
+                  "valueString": "Ring binder pack (10)",
+                  "content": "Ring binder pack (10)",
+                  "confidence": 0.984
+                },
+                "Quantity": {
+                  "type": "number",
+                  "valueNumber": 2.0,
+                  "content": "2.00",
+                  "confidence": 0.951
+                },
+                "UnitPrice": {
+                  "type": "currency",
+                  "valueCurrency": {
+                    "amount": 18.4,
+                    "currencyCode": "EUR"
+                  },
+                  "content": "18.40",
+                  "confidence": 0.943
+                },
+                "Amount": {
+                  "type": "currency",
+                  "valueCurrency": {
+                    "amount": 36.8,
+                    "currencyCode": "EUR"
+                  },
+                  "content": "36.80",
+                  "confidence": 0.971
+                },
+                "TaxRate": {
+                  "type": "string",
+                  "valueString": "22%",
+                  "content": "22%",
+                  "confidence": 0.973
+                }
+              }
+            }
+          ]
+        },
+        "PurchaseOrder": {
+          "type": "string",
+          "valueString": "PO-S-IT-02-001",
+          "content": "PO-S-IT-02-001",
+          "confidence": 0.917
+        },
+        "PaymentDetails": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "object",
+              "valueObject": {
+                "IBAN": {
+                  "type": "string",
+                  "valueString": "IT84N3794026542351161559407",
+                  "content": "IT84N3794026542351161559407",
+                  "confidence": 0.909
+                }
+              }
+            }
+          ]
+        },
+        "PurchaseOrderNumber": {
+          "type": "string",
+          "valueString": "PO-S-IT-02-001",
+          "content": "PO-S-IT-02-001",
+          "confidence": 0.939
+        },
+        "IBAN": {
+          "type": "string",
+          "valueString": "IT84N3794026542351161559407",
+          "content": "IT84N3794026542351161559407",
+          "confidence": 0.938
+        }
+      }
+    }
+  ]
+}

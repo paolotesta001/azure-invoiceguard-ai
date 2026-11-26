@@ -1,0 +1,20 @@
+{
+  "file": "14_pdf_wrong_price_layout_b.pdf",
+  "description": "PDF (layout B), desk price +8.3% vs contract; IBAN only via query field",
+  "format": "pdf_b",
+  "supplier_id": "S-IT-01",
+  "invoice_number": "FA-2026-0120",
+  "expected_fields": {
+    "invoice_date": "2026-10-17",
+    "currency": "EUR",
+    "subtotal": "520.00",
+    "vat_amount": "114.40",
+    "total": "634.40"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "flagged",
+  "expected_anomalies": [
+    "PRICE_ABOVE_CAP"
+  ],
+  "expected_needs_review": []
+}

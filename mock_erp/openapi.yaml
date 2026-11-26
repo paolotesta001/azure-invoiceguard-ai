@@ -1,0 +1,120 @@
+openapi: 3.0.3
+info:
+  title: InvoiceGuard Mock ERP (read-only)
+  version: 0.2.0
+  description: >
+    Read-only ERP operations for the InvoiceGuard Analyst agent (Foundry OpenAPI tool, v2).
+    Payment approval is intentionally not exposed here. Synthetic data only.
+servers:
+  - url: http://localhost:8001
+paths:
+  /suppliers/{supplier_id}:
+    get:
+      operationId: get_supplier
+      summary: Get supplier master data
+      parameters:
+        - {name: supplier_id, in: path, required: true, schema: {type: string}}
+      responses:
+        "200": {description: Supplier, content: {application/json: {schema: {$ref: "#/components/schemas/Supplier"}}}}
+        "404": {description: Not found}
+  /purchase-orders/{po_number}:
+    get:
+      operationId: get_purchase_order
+      summary: Get a purchase order with its lines
+      parameters:
+        - {name: po_number, in: path, required: true, schema: {type: string}}
+      responses:
+        "200": {description: Purchase order, content: {application/json: {schema: {$ref: "#/components/schemas/PurchaseOrder"}}}}
+        "404": {description: Not found}
+  /purchase-orders/{po_number}/goods-receipts:
+    get:
+      operationId: get_goods_receipt
+      summary: List goods receipts for a purchase order
+      parameters:
+        - {name: po_number, in: path, required: true, schema: {type: string}}
+      responses:
+        "200":
+          description: Goods receipts
+          content:
+            application/json:
+              schema: {type: array, items: {$ref: "#/components/schemas/GoodsReceipt"}}
+        "404": {description: Not found}
+  /contracts/{contract_id}:
+    get:
+      operationId: get_contract
+      summary: Get contract terms and structured price list
+      parameters:
+        - {name: contract_id, in: path, required: true, schema: {type: string}}
+      responses:
+        "200": {description: Contract, content: {application/json: {schema: {$ref: "#/components/schemas/ContractWithPrices"}}}}
+        "404": {description: Not found}
+components:
+  schemas:
+    Supplier:
+      type: object
+      required: [id, name, vat_id, country, currency, iban_on_file, status]
+      properties:
+        id: {type: string}
+        name: {type: string}
+        vat_id: {type: string}
+        country: {type: string, enum: [IT, PL, OTHER]}
+        currency: {type: string}
+        iban_on_file: {type: string}
+        iban_last_changed_at: {type: string, format: date, nullable: true}
+        status: {type: string, enum: [active, blocked]}
+    PurchaseOrder:
+      type: object
+      required: [po_number, supplier_id, status, lines]
+      properties:
+        po_number: {type: string}
+        supplier_id: {type: string}
+        status: {type: string, enum: [open, closed]}
+        lines:
+          type: array
+          items:
+            type: object
+            required: [sku, quantity, unit_price]
+            properties:
+              sku: {type: string}
+              quantity: {type: string, description: Decimal as string}
+              unit_price: {type: string, description: Decimal as string}
+    GoodsReceipt:
+      type: object
+      required: [id, po_number, received_at, lines]
+      properties:
+        id: {type: string}
+        po_number: {type: string}
+        received_at: {type: string, format: date}
+        lines:
+          type: array
+          items:
+            type: object
+            required: [sku, quantity_received]
+            properties:
+              sku: {type: string}
+              quantity_received: {type: string, description: Decimal as string}
+    ContractWithPrices:
+      type: object
+      required: [contract, price_items]
+      properties:
+        contract:
+          type: object
+          properties:
+            id: {type: string}
+            supplier_id: {type: string}
+            version: {type: integer}
+            valid_from: {type: string, format: date}
+            valid_to: {type: string, format: date}
+            payment_terms_days: {type: integer}
+            max_price_increase_pct: {type: string}
+            currency: {type: string}
+        price_items:
+          type: array
+          items:
+            type: object
+            properties:
+              sku: {type: string}
+              description: {type: string}
+              unit_price: {type: string}
+              currency: {type: string}
+              unit: {type: string}

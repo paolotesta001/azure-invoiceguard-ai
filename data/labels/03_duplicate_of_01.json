@@ -1,0 +1,20 @@
+{
+  "file": "03_duplicate_of_01.xml",
+  "description": "Same invoice number as 01, re-sent (different file bytes)",
+  "format": "xml",
+  "supplier_id": "S-IT-01",
+  "invoice_number": "FA-2026-0101",
+  "expected_fields": {
+    "invoice_date": "2026-10-05",
+    "currency": "EUR",
+    "subtotal": "202.50",
+    "vat_amount": "44.55",
+    "total": "247.05"
+  },
+  "expected_submission_status": "duplicate_rejected",
+  "expected_invoice_status": null,
+  "expected_anomalies": [
+    "DUPLICATE"
+  ],
+  "expected_needs_review": []
+}

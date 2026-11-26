@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<p:FatturaElettronica xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" versione="FPR12">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>03000000033</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>00001</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>0000000</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>03000000033</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>Northwind Logistica S.r.l.</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Via Esempio 1</Indirizzo>
+        <CAP>20100</CAP>
+        <Comune>Milano</Comune>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>09999999990</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>Demo Buyer S.r.l. (synthetic)</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Via Esempio 1</Indirizzo>
+        <CAP>20100</CAP>
+        <Comune>Milano</Comune>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-10-09</Data>
+        <Numero>NWL-2026-315</Numero>
+        <ImportoTotaleDocumento>290.40</ImportoTotaleDocumento>
+      </DatiGeneraliDocumento>
+      <DatiOrdineAcquisto>
+        <IdDocumento>PO-S-IT-03-001</IdDocumento>
+      </DatiOrdineAcquisto>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>SKU</CodiceTipo>
+          <CodiceValore>NW-STORAGE</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>Warehouse storage per pallet/month</Descrizione>
+        <Quantita>20.00</Quantita>
+        <UnitaMisura>pallet</UnitaMisura>
+        <PrezzoUnitario>12.00</PrezzoUnitario>
+        <PrezzoTotale>240.00</PrezzoTotale>
+        <AliquotaIVA>21.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>21.00</AliquotaIVA>
+        <ImponibileImporto>240.00</ImponibileImporto>
+        <Imposta>50.40</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP05</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-11-08</DataScadenzaPagamento>
+        <ImportoPagamento>290.40</ImportoPagamento>
+        <IBAN>IT81R1618495931034131647525</IBAN>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>

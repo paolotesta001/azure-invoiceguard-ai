@@ -1,0 +1,20 @@
+{
+  "file": "06_invalid_vat_rate.xml",
+  "description": "VAT rate 21% is not an Italian rate",
+  "format": "xml",
+  "supplier_id": "S-IT-03",
+  "invoice_number": "NWL-2026-315",
+  "expected_fields": {
+    "invoice_date": "2026-10-09",
+    "currency": "EUR",
+    "subtotal": "240.00",
+    "vat_amount": "50.40",
+    "total": "290.40"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "flagged",
+  "expected_anomalies": [
+    "VAT_RATE"
+  ],
+  "expected_needs_review": []
+}

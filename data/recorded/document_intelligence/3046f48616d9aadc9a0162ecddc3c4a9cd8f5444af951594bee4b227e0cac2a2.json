@@ -1,0 +1,166 @@
+{
+  "_recording": {
+    "source": "simulated",
+    "note": "Generated from synthetic ground truth; replace with a live recording via `make record` (scripts/record_responses.py)."
+  },
+  "apiVersion": "2024-11-30",
+  "modelId": "prebuilt-invoice",
+  "documents": [
+    {
+      "docType": "invoice",
+      "confidence": 0.824,
+      "fields": {
+        "VendorName": {
+          "type": "string",
+          "valueString": "Contoso Forniture Ufficio S.p.A.",
+          "content": "Contoso Forniture Ufficio S.p.A.",
+          "confidence": 0.898
+        },
+        "VendorTaxId": {
+          "type": "string",
+          "valueString": "IT02000000022",
+          "content": "IT02000000022",
+          "confidence": 0.837
+        },
+        "CustomerName": {
+          "type": "string",
+          "valueString": "Demo Buyer S.r.l. (synthetic)",
+          "content": "Demo Buyer S.r.l. (synthetic)",
+          "confidence": 0.837
+        },
+        "InvoiceId": {
+          "type": "string",
+          "valueString": "CF-26-0475",
+          "content": "CF-26-0475",
+          "confidence": 0.822
+        },
+        "InvoiceDate": {
+          "type": "date",
+          "valueDate": "2026-10-19",
+          "content": "2026-10-19",
+          "confidence": 0.881
+        },
+        "DueDate": {
+          "type": "date",
+          "valueDate": "2026-12-18",
+          "content": "2026-12-18",
+          "confidence": 0.854
+        },
+        "SubTotal": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 128.0,
+            "currencyCode": "EUR"
+          },
+          "content": "128.00",
+          "confidence": 0.84
+        },
+        "TotalTax": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 28.16,
+            "currencyCode": "EUR"
+          },
+          "content": "28.16",
+          "confidence": 0.834
+        },
+        "InvoiceTotal": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 156.16,
+            "currencyCode": "EUR"
+          },
+          "content": "156.16",
+          "confidence": 0.61
+        },
+        "Items": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "object",
+              "confidence": 0.831,
+              "valueObject": {
+                "ProductCode": {
+                  "type": "string",
+                  "valueString": "CON-TONER",
+                  "content": "CON-TONER",
+                  "confidence": 0.842
+                },
+                "Description": {
+                  "type": "string",
+                  "valueString": "Toner cartridge black",
+                  "content": "Toner cartridge black",
+                  "confidence": 0.827
+                },
+                "Quantity": {
+                  "type": "number",
+                  "valueNumber": 2.0,
+                  "content": "2.00",
+                  "confidence": 0.89
+                },
+                "UnitPrice": {
+                  "type": "currency",
+                  "valueCurrency": {
+                    "amount": 64.0,
+                    "currencyCode": "EUR"
+                  },
+                  "content": "64.00",
+                  "confidence": 0.856
+                },
+                "Amount": {
+                  "type": "currency",
+                  "valueCurrency": {
+                    "amount": 128.0,
+                    "currencyCode": "EUR"
+                  },
+                  "content": "128.00",
+                  "confidence": 0.854
+                },
+                "TaxRate": {
+                  "type": "string",
+                  "valueString": "22%",
+                  "content": "22%",
+                  "confidence": 0.837
+                }
+              }
+            }
+          ]
+        },
+        "PurchaseOrder": {
+          "type": "string",
+          "valueString": "PO-S-IT-02-001",
+          "content": "PO-S-IT-02-001",
+          "confidence": 0.891
+        },
+        "PaymentDetails": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "object",
+              "valueObject": {
+                "IBAN": {
+                  "type": "string",
+                  "valueString": "IT84N3794026542351161559407",
+                  "content": "IT84N3794026542351161559407",
+                  "confidence": 0.55
+                }
+              }
+            }
+          ]
+        },
+        "PurchaseOrderNumber": {
+          "type": "string",
+          "valueString": "PO-S-IT-02-001",
+          "content": "PO-S-IT-02-001",
+          "confidence": 0.835
+        },
+        "IBAN": {
+          "type": "string",
+          "valueString": "IT84N3794026542351161559407",
+          "content": "IT84N3794026542351161559407",
+          "confidence": 0.58
+        }
+      }
+    }
+  ]
+}

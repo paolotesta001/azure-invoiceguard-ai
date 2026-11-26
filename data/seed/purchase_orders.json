@@ -1,0 +1,116 @@
+[
+  {
+    "po_number": "PO-S-IT-01-001",
+    "supplier_id": "S-IT-01",
+    "status": "open",
+    "lines": [
+      {
+        "sku": "FAB-CHAIR",
+        "quantity": "300",
+        "unit_price": "85.00"
+      },
+      {
+        "sku": "FAB-DESK",
+        "quantity": "300",
+        "unit_price": "240.00"
+      },
+      {
+        "sku": "FAB-LAMP",
+        "quantity": "300",
+        "unit_price": "32.50"
+      }
+    ]
+  },
+  {
+    "po_number": "PO-S-IT-02-001",
+    "supplier_id": "S-IT-02",
+    "status": "open",
+    "lines": [
+      {
+        "sku": "CON-PAPER",
+        "quantity": "300",
+        "unit_price": "21.90"
+      },
+      {
+        "sku": "CON-TONER",
+        "quantity": "300",
+        "unit_price": "64.00"
+      },
+      {
+        "sku": "CON-BINDER",
+        "quantity": "300",
+        "unit_price": "18.40"
+      }
+    ]
+  },
+  {
+    "po_number": "PO-S-IT-03-001",
+    "supplier_id": "S-IT-03",
+    "status": "open",
+    "lines": [
+      {
+        "sku": "NW-PALLET",
+        "quantity": "300",
+        "unit_price": "145.00"
+      },
+      {
+        "sku": "NW-STORAGE",
+        "quantity": "300",
+        "unit_price": "12.00"
+      }
+    ]
+  },
+  {
+    "po_number": "PO-S-IT-04-001",
+    "supplier_id": "S-IT-04",
+    "status": "open",
+    "lines": [
+      {
+        "sku": "TS-CABLE",
+        "quantity": "300",
+        "unit_price": "9.90"
+      },
+      {
+        "sku": "TS-DOCK",
+        "quantity": "300",
+        "unit_price": "129.00"
+      }
+    ]
+  },
+  {
+    "po_number": "PO-S-IT-05-001",
+    "supplier_id": "S-IT-05",
+    "status": "open",
+    "lines": [
+      {
+        "sku": "AD-CLEAN",
+        "quantity": "300",
+        "unit_price": "450.00"
+      }
+    ]
+  },
+  {
+    "po_number": "PO-S-PL-01-001",
+    "supplier_id": "S-PL-01",
+    "status": "open",
+    "lines": [
+      {
+        "sku": "WT-BOX",
+        "quantity": "300",
+        "unit_price": "6.50"
+      }
+    ]
+  },
+  {
+    "po_number": "PO-S-PL-02-001",
+    "supplier_id": "S-PL-02",
+    "status": "open",
+    "lines": [
+      {
+        "sku": "LW-LIC",
+        "quantity": "300",
+        "unit_price": "1200.00"
+      }
+    ]
+  }
+]

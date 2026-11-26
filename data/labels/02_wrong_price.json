@@ -1,0 +1,20 @@
+{
+  "file": "02_wrong_price.xml",
+  "description": "Toner unit price +12% vs contract (cap 3%)",
+  "format": "xml",
+  "supplier_id": "S-IT-02",
+  "invoice_number": "CF-26-0442",
+  "expected_fields": {
+    "invoice_date": "2026-10-06",
+    "currency": "EUR",
+    "subtotal": "258.90",
+    "vat_amount": "56.96",
+    "total": "315.86"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "flagged",
+  "expected_anomalies": [
+    "PRICE_ABOVE_CAP"
+  ],
+  "expected_needs_review": []
+}

@@ -1,0 +1,20 @@
+{
+  "file": "11_unknown_sku.xml",
+  "description": "Item not priced in the contract",
+  "format": "xml",
+  "supplier_id": "S-IT-01",
+  "invoice_number": "FA-2026-0111",
+  "expected_fields": {
+    "invoice_date": "2026-10-14",
+    "currency": "EUR",
+    "subtotal": "390.00",
+    "vat_amount": "85.80",
+    "total": "475.80"
+  },
+  "expected_submission_status": "accepted",
+  "expected_invoice_status": "flagged",
+  "expected_anomalies": [
+    "SKU_NOT_IN_CONTRACT"
+  ],
+  "expected_needs_review": []
+}

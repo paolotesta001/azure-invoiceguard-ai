@@ -1,0 +1,160 @@
+{
+  "_recording": {
+    "source": "simulated",
+    "note": "Generated from synthetic ground truth; replace with a live recording via `make record` (scripts/record_responses.py)."
+  },
+  "apiVersion": "2024-11-30",
+  "modelId": "prebuilt-invoice",
+  "documents": [
+    {
+      "docType": "invoice",
+      "confidence": 0.927,
+      "fields": {
+        "VendorName": {
+          "type": "string",
+          "valueString": "Northwind Logistica S.r.l.",
+          "content": "Northwind Logistica S.r.l.",
+          "confidence": 0.987
+        },
+        "VendorTaxId": {
+          "type": "string",
+          "valueString": "IT03000000033",
+          "content": "IT03000000033",
+          "confidence": 0.983
+        },
+        "CustomerName": {
+          "type": "string",
+          "valueString": "Demo Buyer S.r.l. (synthetic)",
+          "content": "Demo Buyer S.r.l. (synthetic)",
+          "confidence": 0.976
+        },
+        "InvoiceId": {
+          "type": "string",
+          "valueString": "NWL-2026-330",
+          "content": "NWL-2026-330",
+          "confidence": 0.915
+        },
+        "InvoiceDate": {
+          "type": "date",
+          "valueDate": "2026-10-18",
+          "content": "2026-10-18",
+          "confidence": 0.944
+        },
+        "DueDate": {
+          "type": "date",
+          "valueDate": "2026-11-17",
+          "content": "2026-11-17",
+          "confidence": 0.919
+        },
+        "SubTotal": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 360.0,
+            "currencyCode": "EUR"
+          },
+          "content": "360.00",
+          "confidence": 0.936
+        },
+        "TotalTax": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 79.2,
+            "currencyCode": "EUR"
+          },
+          "content": "79.20",
+          "confidence": 0.905
+        },
+        "InvoiceTotal": {
+          "type": "currency",
+          "valueCurrency": {
+            "amount": 439.2,
+            "currencyCode": "EUR"
+          },
+          "content": "439.20",
+          "confidence": 0.934
+        },
+        "Items": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "object",
+              "confidence": 0.989,
+              "valueObject": {
+                "ProductCode": {
+                  "type": "string",
+                  "valueString": "NW-STORAGE",
+                  "content": "NW-STORAGE",
+                  "confidence": 0.924
+                },
+                "Description": {
+                  "type": "string",
+                  "valueString": "Warehouse storage per pallet/month",
+                  "content": "Warehouse storage per pallet/month",
+                  "confidence": 0.971
+                },
+                "Quantity": {
+                  "type": "number",
+                  "valueNumber": 30.0,
+                  "content": "30.00",
+                  "confidence": 0.941
+                },
+                "UnitPrice": {
+                  "type": "currency",
+                  "valueCurrency": {
+                    "amount": 12.0,
+                    "currencyCode": "EUR"
+                  },
+                  "content": "12.00",
+                  "confidence": 0.938
+                },
+                "Amount": {
+                  "type": "currency",
+                  "valueCurrency": {
+                    "amount": 360.0,
+                    "currencyCode": "EUR"
+                  },
+                  "content": "360.00",
+                  "confidence": 0.986
+                },
+                "TaxRate": {
+                  "type": "string",
+                  "valueString": "22%",
+                  "content": "22%",
+                  "confidence": 0.99
+                }
+              }
+            }
+          ]
+        },
+        "PaymentDetails": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "object",
+              "valueObject": {
+                "IBAN": {
+                  "type": "string",
+                  "valueString": "IT81R1618495931034131647525",
+                  "content": "IT81R1618495931034131647525",
+                  "confidence": 0.95
+                }
+              }
+            }
+          ]
+        },
+        "PurchaseOrderNumber": {
+          "type": "string",
+          "valueString": "PO-S-IT-03-001",
+          "content": "PO-S-IT-03-001",
+          "confidence": 0.965
+        },
+        "IBAN": {
+          "type": "string",
+          "valueString": "IT81R1618495931034131647525",
+          "content": "IT81R1618495931034131647525",
+          "confidence": 0.914
+        }
+      }
+    }
+  ]
+}

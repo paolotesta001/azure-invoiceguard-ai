@@ -1,0 +1,106 @@
+[
+  {
+    "contract_id": "C-S-IT-01-v1",
+    "sku": "FAB-CHAIR",
+    "description": "Ergonomic office chair",
+    "unit_price": "85.00",
+    "currency": "EUR",
+    "unit": "pz"
+  },
+  {
+    "contract_id": "C-S-IT-01-v1",
+    "sku": "FAB-DESK",
+    "description": "Standing desk 160x80",
+    "unit_price": "240.00",
+    "currency": "EUR",
+    "unit": "pz"
+  },
+  {
+    "contract_id": "C-S-IT-01-v1",
+    "sku": "FAB-LAMP",
+    "description": "LED desk lamp",
+    "unit_price": "32.50",
+    "currency": "EUR",
+    "unit": "pz"
+  },
+  {
+    "contract_id": "C-S-IT-02-v1",
+    "sku": "CON-PAPER",
+    "description": "A4 paper box (5 reams)",
+    "unit_price": "21.90",
+    "currency": "EUR",
+    "unit": "box"
+  },
+  {
+    "contract_id": "C-S-IT-02-v1",
+    "sku": "CON-TONER",
+    "description": "Toner cartridge black",
+    "unit_price": "64.00",
+    "currency": "EUR",
+    "unit": "pz"
+  },
+  {
+    "contract_id": "C-S-IT-02-v1",
+    "sku": "CON-BINDER",
+    "description": "Ring binder pack (10)",
+    "unit_price": "18.40",
+    "currency": "EUR",
+    "unit": "pack"
+  },
+  {
+    "contract_id": "C-S-IT-03-v1",
+    "sku": "NW-PALLET",
+    "description": "Pallet transport Milano-Torino",
+    "unit_price": "145.00",
+    "currency": "EUR",
+    "unit": "pallet"
+  },
+  {
+    "contract_id": "C-S-IT-03-v1",
+    "sku": "NW-STORAGE",
+    "description": "Warehouse storage per pallet/month",
+    "unit_price": "12.00",
+    "currency": "EUR",
+    "unit": "pallet"
+  },
+  {
+    "contract_id": "C-S-IT-04-v1",
+    "sku": "TS-CABLE",
+    "description": "USB-C cable 2m",
+    "unit_price": "9.90",
+    "currency": "EUR",
+    "unit": "pz"
+  },
+  {
+    "contract_id": "C-S-IT-04-v1",
+    "sku": "TS-DOCK",
+    "description": "USB-C docking station",
+    "unit_price": "129.00",
+    "currency": "EUR",
+    "unit": "pz"
+  },
+  {
+    "contract_id": "C-S-IT-05-v1",
+    "sku": "AD-CLEAN",
+    "description": "Office cleaning (monthly)",
+    "unit_price": "450.00",
+    "currency": "EUR",
+    "unit": "month"
+  },
+  {
+    "contract_id": "C-S-PL-01-v1",
+    "sku": "WT-BOX",
+    "description": "Shipping box large",
+    "unit_price": "6.50",
+    "currency": "PLN",
+    "unit": "szt"
+  },
+  {
+    "contract_id": "C-S-PL-02-v1",
+    "sku": "LW-LIC",
+    "description": "Software licence (annual)",
+    "unit_price": "1200.00",
+    "currency": "PLN",
+    "unit": "szt"
+  }
+]
